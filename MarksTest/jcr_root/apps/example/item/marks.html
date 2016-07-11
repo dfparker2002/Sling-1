@@ -6,5 +6,8 @@
   </head>
   <body>
     <h1 data-sly-test="${properties.jcr:title}">${properties.jcr:title}</h1>
+  <div data-sly-use.mycomp="${ 'apps.example.item.MyComponent'}">
+${mycomp.date}
+</div>
   </body>
 </html>
