@@ -1,0 +1,15 @@
+<!DOCTYPE html!>
+<!--/* A simple sightly script */-->
+
+<html>
+ <head>
+   <title>${properties.jcr:title}</title>
+  </head>
+  <body>
+  <!-- this shows that a simple sightly script can use a component from the jcr in a different folder -->
+    <h1 data-sly-test="${properties.jcr:title}">${properties.jcr:title}</h1>
+  <div data-sly-use.mycomp="${ 'apps.example.item.MyComponent'}">
+${mycomp.date}
+</div>
+  </body>
+</html>

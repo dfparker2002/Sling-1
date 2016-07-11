@@ -43,7 +43,7 @@ public class SimpleDSComponent implements Runnable {
     private BundleContext bundleContext;
     
     public void run() {
-        logger.info("Running...");
+        logger.info("Running... mofo true bro?");
     }
     
     protected void activate(ComponentContext ctx) {
